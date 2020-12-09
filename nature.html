@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nature</title>
+<link href="nature.css" rel="stylesheet" type="text/css"/>
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&amp;apikey=9dac85e9-a864-416b-b5d1-2c66b2924b61" type="text/javascript">
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="nature1">
+	<div class="nature">
+		<img  id="para" src="https://www.clipartmax.com/png/full/391-3911698_green-leaf-clipart-best-green-leaf-clipart-best.png" alt="nature" width="8%"/>
+		<hr id="v_hr">
+		<h3>ALL ABOUT NATURE</h3>
+		 
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("img").click(function(){
+				$("#para").animate({left:'100px', opacity:0.5});
+				$("#para").animate({left:'0px', opacity:1});
+				 
+			});
+		});
+		 
+	</script>
+	
+	<h3 onclick="popup()" id="login">Login</h3>
+	
+	<div class="popup">
+			<div class="popup_1">
+				<img src="https://img2.pngindir.com/20180524/wzg/kisspng-logo-initial-selfishness-5b07771c19b398.9383498015272159001053.jpg" alt="logo" width="15%">
+				<img onclick="close_popup()" class="closed" src="https://w0.pngwave.com/png/447/77/computer-icons-x-mark-symbol-check-mark-symbol-png-clip-art.png" alt="logo" width="5%">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input id="pass" type="password" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark" > Log In</button>
+			</div> 
+	</div>
+	</div>
+ 
+		
+	<div class="html">
+		<label for="toggle">&#9776;</label>
+	</div>
+	<input type="checkbox" name="" id="toggle">
+	<div class="main">
+		<img id="id_i" src="https://www.nicepng.com/png/detail/497-4977980_right-arrow-angle-outline-comments-png-white-outline.png" alt="" width="13px" height="13px"/>
+		 <div id="life"><strong>LIFESTYLE</strong></div>
+		 <script>
+			$(document).ready(function(){
+				$("#life").click(function(){
+					$("").toggle();
+				})
+			})
+		 </script>
+		<img id="id_i" src="https://www.nicepng.com/png/detail/497-4977980_right-arrow-angle-outline-comments-png-white-outline.png" alt="" width="13px" height="13px"/>
+		 <div><strong>HISTORY</strong></div>
+		<img id="id_i" src="https://www.nicepng.com/png/detail/497-4977980_right-arrow-angle-outline-comments-png-white-outline.png" alt="" width="13px" height="13px"/>
+		<div><strong>NATURE</strong></div>
+		<img id="id_i" src="https://www.nicepng.com/png/detail/497-4977980_right-arrow-angle-outline-comments-png-white-outline.png" alt="" width="13px" height="13px"/>
+		<div><strong>WORLD</strong></div>
+		<img id="id_i" src="https://www.nicepng.com/png/detail/497-4977980_right-arrow-angle-outline-comments-png-white-outline.png" alt="" width="13px" height="13px"/>
+		<div><strong>SCIENCE</strong></div>
+		
+	</div>
+	
+	<div class="user">
+		<img id="profile"src="https://img.pngio.com/admin-person-man-people-customer-user-human-svg-png-icon-free-human-icon-png-938_980.png" alt="icon" >
+		<p id="user_name" style="color:white; ">SNK</p>
+	</div>
+	<h1 style="text-align:center; margin-top:50px;margin-bottom:70px">Home * Nature</h1>
+	<div class="video">
+		<iframe style="margin-right:70px;" width="350" height="300" src="https://www.youtube.com/embed/668nUCeBHyY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+		</iframe>
+		<iframe style="margin-right:70px" width="350" height="300" src="https://www.youtube.com/embed/VnfUV0rdn8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">	
+		</iframe>
+		<iframe  width="350" height="300" src="https://www.youtube.com/embed/6lt2JfJdGSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+		</iframe>
+		</div>
+		<div class="video_1">
+		<iframe style="margin-right:70px;margin-top:100px" width="350" height="300" src="https://www.youtube.com/embed/IUN664s7N-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+		</iframe>
+		<iframe style="margin-right:70px;" width="350" height="300" src="https://www.youtube.com/embed/6v2L2UGZJAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+		</iframe>
+		<iframe style="margin-right:70px;" width="350" height="300" src="https://www.youtube.com/embed/XlZkqWSwT3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+		</iframe>
+	</div>
+	 
+	
+	<div class="btn">
+	<button style="margin-right:10px;border-color:red;border-radius:5px" id="quick" onclick="change(this)"  onmouseover="big(this)" onmouseout= "small(this)"type="button" class="btn btn-primary btn-block">QUICK FACTS</button>
+	<button style="margin-right:10px;border-color:red;border-radius:5px" id="essential" onclick="change(this)" onmouseover="big(this)" onmouseout= "small(this)"type="button" class="btn btn-primary btn-block">ESSENTIAL FACTS</button>
+	<button style="margin-right:10px;border-color:red;border-radius:5px" id="interesting" onclick="change(this)" onmouseover="big(this)" onmouseout= "small(this)"type="button" class="btn btn-primary btn-block">INTERESTING FACTS</button>
+	</div>
+
+	<p style="font-size:25px" id="demo1"> </p>
+	<p style="font-size:25px" id="demo2"> </p>
+	<p style="font-size:25px" id="demo3"> </p>
+	<p style="font-size:25px" id="demo4"> </p>
+	<p style="font-size:25px" id="demo5"> </p>
+	 
+	<script>
+		function change(element){
+		var a = element.innerHTML;
+			switch(a){
+			case "QUICK FACTS":
+				document.getElementById("demo1").innerHTML="01 A tiger’s skin has stripes. "
+				document.getElementById("demo2").innerHTML="02 Glass is neither a solid nor liquid."
+				document.getElementById("demo3").innerHTML="03 An inch of rain is equivalent to about 10-15 inches of snow."
+				document.getElementById("demo4").innerHTML="04 The rock hyrax is related to the elephant."
+				document.getElementById("demo5").innerHTML="05 The hump of a camel is made up of fat. "
+				 
+				break;
+				case "ESSENTIAL FACTS":
+				document.getElementById("demo1").innerHTML="01 To avoid mating, female dragonflies will pretend to be dead. "
+				document.getElementById("demo2").innerHTML="02 The only venomous primate is the slow lorises."
+				document.getElementById("demo3").innerHTML="03 Greenland sharks are 21 feet long. "
+				document.getElementById("demo4").innerHTML="04 Different planets have their unique sound. "
+				document.getElementById("demo5").innerHTML="05 Diamonds and pencils are made from the same material. "
+				 
+				
+				break;
+				case "INTERESTING FACTS":
+				document.getElementById("demo1").innerHTML="01 Carrots were originally grown purple. "
+				document.getElementById("demo2").innerHTML="02 Your DNA is fireproof. "
+				document.getElementById("demo3").innerHTML="03 There are approximately 4,810 known species of frogs in the world.  "
+				document.getElementById("demo4").innerHTML="04 85% of the planet’s oxygen comes from the ocean."
+				document.getElementById("demo5").innerHTML="05 Bamboo is the world’s fastest-growing plant. "
+				break;
+			}
+		}
+	</script><br><br><br><br><br>
+	
+	<div class="contact">
+		<div class="contact1">			
+			<img style="margin-left:50px" id="lop" src="https://www.freepngimg.com/thumb/logo/65332-icons-f8-facebook,-computer-facebook-logo-inc..png" alt="" width="2%"/>
+			<img style="margin-left:20px;border-radius:50%" id="lop" src="https://im0-tub-ru.yandex.net/i?id=0c550f6f5f6c42a2c41930fa35ae7c15&ref=rim&n=33&w=188&h=188" alt="" width="2%"/>
+			<img style="margin-left:20px" id="lop" src="https://www.pinclipart.com/picdir/big/141-1417157_linkedin-icon-for-resume-i-see-you-re.png" alt="" width="2%"/>
+			<img style="margin-left:20px" id="lop" src="http://cdn.onlinewebfonts.com/svg/img_466121.png" alt="" width="2%"/>
+			<img style="margin-left:20px" id="lop" src="https://avatanplus.com/files/resources/original/5c4d6ae302e9a1688e6986c4.png" alt="" width="2%"/>
+			<img style="border-radius:50%;margin-left:20px" id="lop" src="https://cdn.worldvectorlogo.com/logos/whatsapp-glyph-black.svg" alt="" width="2%"/>
+			<img style="margin-left:20px" id="lop" src="https://www.pngarts.com/files/4/Black-Wifi-Logo-PNG-Free-Download.png" alt="" width="1.7%"/> 
+		</div>
+		<div class="contact2">
+			<p  style="margin-left:50px">Privacy & Security</p>
+			<p style="margin-left:20px">Terms of Use</p>
+			<p style="margin-left:20px">Trademarks</p>
+			<p style="margin-left:20px">Legal</p>
+			<p style="margin-left:20px">Genuine tools</p>
+			<p style="margin-left:20px">Contact</p>
+		</div>
+	</div>
+	
+ 
+<script src="script.js"></script>
+
+</body>
+</html>
